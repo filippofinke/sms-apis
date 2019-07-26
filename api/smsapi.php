@@ -70,11 +70,11 @@ class SmsApi {
         return false;
     }
 
-    public function loadModule($module) {
+    public function enableModule($module) {
         if(in_array($module, $this->getModules())) {
             $module = "Api\\Modules\\$module";
             $this->activeModules[] = new $module();
-            self::log("Module $module loaded!");
+            self::log("Module $module enabled!");
             return true;
         } else {
             self::log("Module $module not found!");
