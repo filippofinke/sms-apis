@@ -26,6 +26,8 @@ $api = new SmsApi(true);
 ?>
 ```
 
+See the examples [Examples folder](examples)
+
 ## Create a module
 
 Being this library modular you can create a specific module for any website of this kind. To create a module you need to create a class that implements the interface ```Api\Modules\module```. After you have created the module and implemented all the methods of the interface you just have to move it into the modules folder.

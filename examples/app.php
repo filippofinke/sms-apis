@@ -3,7 +3,7 @@
  * @author Filippo Finke
  */
 use Api\SmsApi;
-require __DIR__ .'/vendor/autoload.php';
+require __DIR__ .'/../vendor/autoload.php';
 
 $api = new SmsApi(true);
 $modules = $api->getModules();
