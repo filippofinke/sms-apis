@@ -70,9 +70,9 @@ function getSms() {
     $sms = $api->getSms($phone, $limit);
     echo "Sms\n";
     if(is_array($sms) && count($sms) > 0) {
-        echo "Index\tMessage\n";
+        echo "Time\t\t\tFrom\t\t\tMessage\n";
         foreach($sms as $key => $sm) {
-            echo $key."\t$sm\n";
+            echo $sm["time"]."\t\t".$sm["from"]."\t\t".$sm["message"]."\n";
         }
     } else {
         echo "No sms loaded\n";
