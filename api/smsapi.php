@@ -73,6 +73,9 @@ class SmsApi {
     public function enableModule($module) {
         if(in_array($module, $this->getModules())) {
             $module = "Api\\Modules\\$module";
+            foreach($this->activeModules as $activeModule) {
+                if(get_class($activeModule) == $module) throw new Exception("Module already enabled!");
+            }
             $this->activeModules[] = new $module();
             self::log("Module $module enabled!");
             return true;
