@@ -1,0 +1,16 @@
+{
+    "name": "filippofinke/sms-apis",
+    "description": "A simple wrapper to multiple free sms receive service",
+    "authors": [
+        {
+            "name": "Filippo Finke",
+            "email": "filippofinke@protonmail.ch"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Api\\": "api"
+        }
+    }
+}
