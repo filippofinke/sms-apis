@@ -77,8 +77,8 @@ class examplemodule implements module {
 ## Status
 I am currently working on these modules:
 
-- https://receive-smss.com/ Almost done
-- https://sms-receive.net/
+- https://receive-smss.com/ Done, [api/modules/receivesmsscom.php](api/modules/receivesmsscom.php)
+- https://sms-receive.net/ Done, [api/modules/smsreceivenet.php](api/modules/smsreceivenet.php)
 - http://sms.sellaite.com/
 - https://smstibo.com/
 - http://7sim.net/
