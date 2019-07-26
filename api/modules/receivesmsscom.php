@@ -39,7 +39,12 @@ class receivesmsscom implements module {
         for($i = 1; $i < count($rows); $i++) {
             $row = $rows[$i];
             preg_match_all('/">(.*?)<\/td>/s', $row, $message);
-            $sms[] = strip_tags($message[1][1]);
+            $sm = array(
+                "from" => (isset($message[1][0]))?$message[1][0]:"UNKNOWN",
+                "message" => strip_tags((isset($message[1][1]))?$message[1][1]:""),
+                "time" => (isset($message[1][2]))?$message[1][2]:"UNKNOWN"
+            );
+            $sms[] = $sm;
         }
         array_splice($sms, $limit);
         return $sms;
