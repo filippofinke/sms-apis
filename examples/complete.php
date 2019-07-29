@@ -88,6 +88,7 @@ while(true) {
     echo "2 - Disable a module\n";
     echo "3 - Get all phones\n";
     echo "4 - Get sms of a specific phone\n";
+    echo "5 - Enable all modules\n";
     $command = readline("Select a command: ");
     system('clear');
     if(is_numeric($command)) {
@@ -103,6 +104,11 @@ while(true) {
             showPhones();
         } else if($command == 4) {
             getSms();
+        } else if($command == 5) {
+            $modules = $api->getModules();
+            foreach($modules as $module) {
+                $api->enableModule($module);
+            }
         }
     }
 }
