@@ -80,7 +80,7 @@ I am currently working on these modules:
 - https://receive-smss.com/ Done, [api/modules/receivesmsscom.php](api/modules/receivesmsscom.php)
 - https://sms-receive.net/ Done, [api/modules/smsreceivenet.php](api/modules/smsreceivenet.php)
 - http://sms.sellaite.com/ Done, [api/modules/smssellaitecom.php](api/modules/smssellaitecom.php)
-- https://smstibo.com/
+- https://smstibo.com/ Done, [api/modules/smstibocom.php](api/modules/smstibocom.php)
 - http://7sim.net/
 - https://sms-online.co/
 - http://receivesms.cc/
