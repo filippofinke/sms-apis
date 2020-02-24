@@ -19,7 +19,7 @@ class receivesmsscom implements module {
 
     private function fetchPhones() {
         $html = file_get_contents($this->url);
-        preg_match_all('/\+[0-9]+/', $html, $phones);
+        preg_match_all('/\+[0-9]{5,}+/', $html, $phones);
         $this->phones = $phones[0];
         SmsApi::log("loaded ".(count($this->phones))." phones!");
     }
